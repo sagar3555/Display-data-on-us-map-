@@ -4,7 +4,7 @@ import  pandas as pd
 from flask import Flask, flash, request, redirect, url_for ,render_template
 from werkzeug.utils import secure_filename
 
-UPLOAD_FOLDER = 'E:\\fulfil.io assignment\\uploads'
+UPLOAD_FOLDER = 'E:\\fulfil.io assignment\\uploads'   ## Change it as per your File system 
 ALLOWED_EXTENSIONS = set(['csv'])
 
 app = Flask(__name__)
@@ -53,4 +53,4 @@ def upload_file():
 
 
 if __name__ == "__main__":
-    app.run( host = "10.102.112.150", port=80,threaded = True)
+    app.run( host = "10.102.112.150", port=80,threaded = True)  ## Make sure you enter correct ip address 
